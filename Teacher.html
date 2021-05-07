@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>我的购物车-品优购</title>
+  <meta name="description"
+    content="品优购JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+  <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购" />
+  <!-- 引入facicon.ico网页图标 -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- 引入css 初始化的css 文件 -->
+  <link rel="stylesheet" href="css/base.css">
+  <!-- 引入公共样式的css 文件 -->
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 引入car css -->
+  <link rel="stylesheet" href="css/car.css">
+  <style>
+    /* input设置type="number"求掉上下箭头  */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none !important;
+    }
+
+    input[type='number'] {
+      -moz-appearance: textfield !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <input type="text" id="ipt"> -->
+  <!-- 顶部快捷导航start -->
+  <div class="shortcut">
+    <div class="w">
+      <div class="fl">
+        <ul>
+          <li>品优购欢迎您！ </li>
+          <li>
+            <a href="#">请登录</a>
+            <a href="#" class="style-red">免费注册</a>
+          </li>
+        </ul>
+      </div>
+      <div class="fr">
+        <ul>
+          <li><a href="#">我的订单</a></li>
+          <li class="spacer"></li>
+          <li>
+            <a href="#">我的品优购</a>
+            <i class="icomoon"></i>
+          </li>
+          <li class="spacer"></li>
+          <li><a href="#">品优购会员</a></li>
+          <li class="spacer"></li>
+          <li><a href="#">企业采购</a></li>
+          <li class="spacer"></li>
+          <li><a href="#">关注品优购</a> <i class="icomoon"></i></li>
+          <li class="spacer"></li>
+          <li><a href="#">客户服务</a> <i class="icomoon"></i></li>
+          <li class="spacer"></li>
+          <li><a href="#">网站导航</a> <i class="icomoon"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 顶部快捷导航end  -->
+
+
+  <div class="car-header">
+    <div class="w">
+      <div class="car-logo">
+        <img src="img/logo.png" alt=""> <b>购物车</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-container">
+    <div class="w">
+      <div class="cart-filter-bar">
+        <em>全部商品</em>
+      </div>
+      <!-- 购物车主要核心区域 -->
+      <div class="cart-warp">
+        <!-- 头部全选模块 -->
+        <div class="cart-thead">
+          <div class="t-checkbox">
+            <input type="checkbox" name="" id="" class="checkall"> 全选
+          </div>
+          <div class="t-goods">商品</div>
+          <div class="t-price">单价</div>
+          <div class="t-num">数量</div>
+          <div class="t-sum">小计</div>
+          <div class="t-action">操作</div>
+        </div>
+
+        <!-- 商品详细模块 -->
+        <div class="cart-item-list">
+          <div class="cart-item">
+            <div class="p-checkbox">
+              <input type="checkbox" name="" id="" class="j-checkbox">
+            </div>
+            <div class="p-goods">
+              <div class="p-img">
+                <img src="upload/p1.jpg" alt="">
+              </div>
+              <div class="p-msg">【5本26.8元】经典儿童文学彩图青少版八十天环游地球中学生语文教学大纲</div>
+            </div>
+            <div class="p-price">￥12.60</div>
+            <div class="p-num">
+              <div class="quantity-form">
+                <a href="javascript:;" class="decrement">-</a>
+                <input type="number" class="itxt" value="1">
+                <a href="javascript:;" class="increment">+</a>
+              </div>
+            </div>
+            <div class="p-sum">￥12.60</div>
+            <div class="p-action"><a href="javascript:;">删除</a></div>
+          </div>
+          <div class="cart-item">
+            <div class="p-checkbox">
+              <input type="checkbox" name="" id="" class="j-checkbox">
+            </div>
+            <div class="p-goods">
+              <div class="p-img">
+                <img src="upload/p2.jpg" alt="">
+              </div>
+              <div class="p-msg">【2000张贴纸】贴纸书 3-6岁 贴画儿童 贴画书全套12册 贴画 贴纸儿童 汽</div>
+            </div>
+            <div class="p-price">￥24.80</div>
+            <div class="p-num">
+              <div class="quantity-form">
+                <a href="javascript:;" class="decrement">-</a>
+                <input type="number" class="itxt" value="1">
+                <a href="javascript:;" class="increment">+</a>
+              </div>
+            </div>
+            <div class="p-sum">￥24.80</div>
+            <div class="p-action"><a href="javascript:;">删除</a></div>
+          </div>
+          <div class="cart-item">
+            <div class="p-checkbox">
+              <input type="checkbox" name="" id="" class="j-checkbox">
+            </div>
+            <div class="p-goods">
+              <div class="p-img">
+                <img src="upload/p3.jpg" alt="">
+              </div>
+              <div class="p-msg">唐诗三百首+成语故事全2册 一年级课外书 精装注音儿童版 小学生二三年级课外阅读书籍</div>
+            </div>
+            <div class="p-price">￥29.80</div>
+            <div class="p-num">
+              <div class="quantity-form">
+                <a href="javascript:;" class="decrement">-</a>
+                <input type="number" class="itxt" value="1">
+                <a href="javascript:;" class="increment">+</a>
+              </div>
+            </div>
+            <div class="p-sum">￥29.80</div>
+            <div class="p-action"><a href="javascript:;">删除</a></div>
+          </div>
+        </div>
+
+        <!-- 结算模块 -->
+        <div class="cart-floatbar">
+          <div class="operation">
+            <a href="javascript:;" class="remove-batch"> 删除选中的商品</a>
+            <a href="javascript:;" class="clear-all">清理购物车</a>
+          </div>
+          <div class="toolbar-right">
+            <div class="amount-sum">已经选<em>0</em>件商品</div>
+            <div class="price-sum">总价： <em>￥0.00</em></div>
+            <div class="btn-area">去结算</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- footer start -->
+  <div class="footer">
+    <div class="w">
+      <!-- mod_service -->
+      <div class="mod_service">
+        <ul>
+          <li>
+            <i class="mod-service-icon mod_service_zheng"></i>
+            <div class="mod_service_tit">
+              <h5>正品保障</h5>
+              <p>正品保障，提供发票</p>
+            </div>
+          </li>
+          <li>
+            <i class="mod-service-icon mod_service_kuai"></i>
+            <div class="mod_service_tit">
+              <h5>正品保障</h5>
+              <p>正品保障，提供发票</p>
+            </div>
+          </li>
+          <li>
+            <i class="mod-service-icon mod_service_bao"></i>
+            <div class="mod_service_tit">
+              <h5>正品保障</h5>
+              <p>正品保障，提供发票</p>
+            </div>
+          </li>
+          <li>
+            <i class="mod-service-icon mod_service_bao"></i>
+            <div class="mod_service_tit">
+              <h5>正品保障</h5>
+              <p>正品保障，提供发票</p>
+            </div>
+          </li>
+          <li>
+            <i class="mod-service-icon mod_service_bao"></i>
+            <div class="mod_service_tit">
+              <h5>正品保障</h5>
+              <p>正品保障，提供发票</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- mod_help -->
+      <div class="mod_help">
+        <dl class="mod_help_item">
+          <dt>购物指南</dt>
+          <dd> <a href="#">购物流程 </a></dd>
+          <dd> <a href="#">会员介绍 </a></dd>
+          <dd> <a href="#">生活旅行/团购 </a></dd>
+          <dd> <a href="#">常见问题 </a></dd>
+          <dd> <a href="#">大家电 </a></dd>
+          <dd> <a href="#">联系客服 </a></dd>
+        </dl>
+        <dl class="mod_help_item">
+          <dt>购物指南</dt>
+          <dd> <a href="#">购物流程 </a></dd>
+          <dd> <a href="#">会员介绍 </a></dd>
+          <dd> <a href="#">生活旅行/团购 </a></dd>
+          <dd> <a href="#">常见问题 </a></dd>
+          <dd> <a href="#">大家电 </a></dd>
+          <dd> <a href="#">联系客服 </a></dd>
+        </dl>
+        <dl class="mod_help_item">
+          <dt>购物指南</dt>
+          <dd> <a href="#">购物流程 </a></dd>
+          <dd> <a href="#">会员介绍 </a></dd>
+          <dd> <a href="#">生活旅行/团购 </a></dd>
+          <dd> <a href="#">常见问题 </a></dd>
+          <dd> <a href="#">大家电 </a></dd>
+          <dd> <a href="#">联系客服 </a></dd>
+        </dl>
+        <dl class="mod_help_item">
+          <dt>购物指南</dt>
+          <dd> <a href="#">购物流程 </a></dd>
+          <dd> <a href="#">会员介绍 </a></dd>
+          <dd> <a href="#">生活旅行/团购 </a></dd>
+          <dd> <a href="#">常见问题 </a></dd>
+          <dd> <a href="#">大家电 </a></dd>
+          <dd> <a href="#">联系客服 </a></dd>
+        </dl>
+        <dl class="mod_help_item">
+          <dt>购物指南</dt>
+          <dd> <a href="#">购物流程 </a></dd>
+          <dd> <a href="#">会员介绍 </a></dd>
+          <dd> <a href="#">生活旅行/团购 </a></dd>
+          <dd> <a href="#">常见问题 </a></dd>
+          <dd> <a href="#">大家电 </a></dd>
+          <dd> <a href="#">联系客服 </a></dd>
+        </dl>
+        <dl class="mod_help_item mod_help_app">
+          <dt>帮助中心</dt>
+          <dd>
+            <img src="upload/erweima.png" alt="">
+            <p>品优购客户端</p>
+          </dd>
+        </dl>
+      </div>
+
+      <!-- mod_copyright  -->
+      <div class="mod_copyright">
+        <p class="mod_copyright_links">
+          关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 | English Site | Contact U
+        </p>
+        <p class="mod_copyright_info">
+          地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
+          京ICP备08001421号京公网安备110108007702
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer end -->
+  <script src="./js/jquery.min.js"></script>
+  <script>
+
+    // 注意的点 :
+    // 1.each(function (index,el) {  })
+    // 2.substr(1)
+    // 3.toFixed(2)
+    // 4.remove() empty() prev() parents() next()
+    // Array.from()  - every
+    $(function () {
+      // 1.全选框 - 小选
+      // 1.1全选框 - 注册点击事件
+      // 1.2找到所有的小选框 -将全选框的状态 赋予给我们的小选框
+      $('.checkall').on('click', function () {
+        // 获取全选框的状态
+
+        // 注意:使用attr获取checked属性拿不到值
+
+        // 1.内置循环帮我们封装了循环的过程, 隐式迭代
+        $('.j-checkbox').prop('checked', $(this).prop('checked'))
+        // 更改背景颜色
+        setLight()
+
+        // 统计商品的数量
+        totalNum()
+      })
+    })
+
+  </script>
+
+  <script>
+
+    // 2. 小选框 - 全选
+    // 2.1小选框注册事件
+    // 必须所有的小选框都为true的情况下,全选才选中
+    $('.j-checkbox').on('click', function () {
+      // every 数组
+      // let result = Array.from($('.j-checkbox')).every(function (smallC, index) {
+
+      //   return $(smallC).prop('checked') === true
+      // })
+
+      // 判断当前小选框的数量和小选框选中的数量做对比 
+      // 可以拿到所有选中的小选框
+      let result = $('.j-checkbox').length === $('.j-checkbox:checked').length
+
+      // 将小选框的状态 -> 全选框
+      $('.checkall').prop('checked', result)
+
+      // 更改背景颜色
+      setLight()
+      // 统计商品的数量
+      totalNum()
+    })
+  </script>
+  <script>
+    // 3.更改背景颜色
+    function setLight() {
+      // 3.1 让所有的div -当前的商品容器移出高亮
+      $('.j-checkbox').parents('.cart-item').removeClass('check-cart-item')
+      //  3.2 让所有选中div- 高亮
+      $('.j-checkbox:checked').parents('.cart-item').addClass('check-cart-item')
+    }
+  </script>
+  <script>
+    // 4.修改商品的数量和小计
+    // 4.1 给加号 + 和 - 绑定事件
+    $('.increment,.decrement,.itxt').on('click input', function (ev) {
+      console.log(ev);
+      // 通过事件对象- ev.type 来判断事件类型
+      let theInput
+      if (ev.type == 'click') {
+        // 4.2 找到 + 和 - 共同的兄弟 input
+         theInput = $(this).siblings('.itxt')
+        // 4.3 判断当前点击的是否是 + 
+        if ($(this).html().trim() == '+') {
+          theInput.val(theInput.val() * 1 + 1)
+        } else if ($(this).html().trim() == '-' && theInput.val() > 1) {
+          theInput.val(theInput.val() - 1)
+        }
+      }else{
+        theInput = $(this)
+        // 判断当前input的值,如果小于1,就让它等于1
+        if(theInput.val()<1){
+          theInput.val(1)
+        }
+      }
+
+      // 4.4获取商品单价
+
+      let price = $(this).parents('.cart-item').find('.p-price').html().substr(1)
+
+      // 4.4获取商品数量
+      let val = theInput.val()
+
+      // 4.5修改小计 (单价* 数量)
+      // console.log(val,$(this).prev().val());
+      // toFixed() 参数就是保留小数点后面几位
+      $(this).parents('.cart-item').find('.p-sum').html('￥' + (price * val).toFixed(2))
+
+      // 统计商品的数量
+      totalNum()
+    })
+
+    // // 给input注册事件
+    // $('.itxt').on('input', function () {
+    //   if ($(this).val() < 1) {
+    //     $(this).val(1)
+    //   }
+    //   // 1.获取当前输入框数量
+    //   let val = $(this).val()
+    //   // 获取商品单价
+    //   let price = $(this).parents('.cart-item').find('.p-price').html().substr(1)
+    //   // 修改小计
+    //   $(this).parents('.cart-item').find('.p-sum').html('￥' + (price * val).toFixed(2))
+    //   // 统计商品的数量
+    //   totalNum()
+    // })
+  </script>
+  <script>
+    // 5.给删除按钮绑定事件
+    $('.p-action>a').on('click', function () {
+      // 5.1删除当前的标签
+      $(this).parents('.cart-item').remove()
+
+      // 5.2循环遍历小选框 -> 全选
+      let result = Array.from($('.j-checkbox')).every(function (smallC, index) {
+        return $(smallC).prop('checked') === true
+      })
+
+      // 判断当前商品length 是否大于0 ,如果=0 ,那么result = false
+      if ($('.j-checkbox').length === 0) {
+        result = false
+      }
+
+      $('.checkall').prop('checked', result)
+
+      // 统计商品的数量
+      totalNum()
+    })
+  </script>
+  <script>
+    // 6.删除选中的商品和清理购物车
+    // 6.1给删除选中商品绑定事件
+    $('.remove-batch').on('click', function () {
+      // 6.2找到所有选中的商品
+      $('.j-checkbox').each(function (index, smallC) {
+        if ($(smallC).prop('checked')) {
+          $(this).parents('.cart-item').remove()
+        }
+      })
+
+      // 6.2循环遍历小选框 -> 全选
+      let result = Array.from($('.j-checkbox')).every(function (smallC, index) {
+        return $(smallC).prop('checked') === true
+      })
+
+      // 判断当前商品length 是否大于0 ,如果=0 ,那么result = false
+      if ($('.j-checkbox').length === 0) {
+        // result = false
+        $('.checkall').prop('checked', false)
+      }
+
+      // $('.checkall').prop('checked', result)
+      // 统计商品的数量
+      totalNum()
+    })
+
+    // 给清理购物车绑定事件
+    $('.clear-all').on('click', function () {
+      // 清空所有商品
+      $('.cart-item-list').empty()
+      $('.checkall').prop('checked', false)
+      // 统计商品的数量
+      totalNum()
+    })
+  </script>
+  <script>
+    // 7 统计商品的数量
+    function totalNum() {
+      var num = 0
+      var totalPrice = 0
+      $('.j-checkbox').each(function (index, smallC) {
+        if ($(smallC).prop('checked')) {
+          num += $(smallC).parents('.cart-item').find('.itxt').val() * 1
+          totalPrice += $(smallC).parents('.cart-item').find('.p-sum').html().substr(1) * 1
+          console.log('num', num);
+          // $('.amount-sum em').html(num)
+          // 找到设置商品数量的元素 - 设置统计数量的值
+        }
+      })
+      $('.amount-sum em').html(num)
+      // 设置总价
+      $('.price-sum em').html('￥' + totalPrice.toFixed(2))
+
+    }
+  </script>
+
+  <script>
+    // 优化:
+    // 1.去除冗余的代码
+    // 2.逻辑上是否可以简化
+    // 3.可以考虑封装成面向对象 - 代码更有组织性
+  </script>
+</body>
+
+</html>
